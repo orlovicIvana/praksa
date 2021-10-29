@@ -11,5 +11,7 @@ class Zadatak extends Model
 
     protected $guarded=[];
 
+    public function grupa(){
+        return $this->belongsTo(Grupa::class);
     }
 }
